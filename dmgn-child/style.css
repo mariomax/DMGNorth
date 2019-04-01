@@ -80,7 +80,8 @@ span.menu-text.hidden { display: none; }
     font-family: "Noto Sans", Sans-serif;
 	font-size: 16px;
 	font-weight: 600;
-	padding: 12px 24px;
+	line-height: 16px;
+	padding: 14px 20px;
 	border: none;
 	border-radius: 3px;
     color: #ffffff;

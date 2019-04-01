@@ -15,11 +15,12 @@ DMG North's new WordPress website
 - Twillio SMS
 - Joy of Text
 - Gravity Forms
+  * Popup collecting email
+  * Contact email form
 
 ## Plugins 
 - SEO Press
 - Wordfence
-- Smash Balloon Instagram feed
 - Hummingbird
 - Smush
 
