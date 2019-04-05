@@ -21,13 +21,14 @@ Version: 1.0
 #site-header.top-header #site-navigation-wrap .dropdown-menu>li>a { font-size: 13px; }
 
 #mobile-dropdown ul li a img {
-    height: 15px;
-    width: 67px;
+    height: auto;
+    width: 130px;
 }
 
 .navigation li a img.icon {
-	height: 15px;
-	width: 67px;
+	height: auto;
+	width: 110px;
+	padding-bottom: 2px;
 }
 
 .elementor-nav-menu--main ul li a img.icon {
@@ -54,6 +55,11 @@ span.menu-text.hidden { display: none; }
 }
 #gform_submit_button_1 {
 	border-radius: 3px;
+	line-height: 1;
+	margin: 0;
+}
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit], .gform_wrapper .gform_page_footer input.button, .gform_wrapper .gform_page_footer input[type=submit] {
+	width: auto !important;
 }
 #jot-subscribegroup-button {
 	background-color: #0c4a83;
@@ -146,4 +152,14 @@ span.menu-text.hidden { display: none; }
 }
 .callout-intro {
 	margin-bottom: 0;
+}
+@media (max-width: 959px) {
+	.widget-area.sidebar-primary {
+		padding: 15px !important;
+	}
+}
+@media (max-width: 767px) {
+	h3.callout {
+		font-size: 18px;
+	}
 }

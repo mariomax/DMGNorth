@@ -46,3 +46,95 @@ function wpcrux_head_meta() {
   echo $html;
 } 
 add_action( 'wp_head', 'wpcrux_head_meta' );
+
+
+/**
+ * Order the Social Icons in the Header Nav area
+ * 
+ * Credit to Rajeeb at OceanWP - 53 minutes to reply!
+ */
+add_filter( 'ocean_social_options', 'change_social_options_order' );
+function change_social_options_order(){
+  return array(
+    'linkedin' => array(
+        'label' => esc_html__( 'LinkedIn', 'oceanwp' ),
+        'icon_class' => 'fa fa-linkedin',
+    ),
+    'instagram'  => array(
+        'label' => esc_html__( 'Instagram', 'oceanwp' ),
+        'icon_class' => 'fa fa-instagram',
+    ),
+    'twitter' => array(
+        'label' => esc_html__( 'Twitter', 'oceanwp' ),
+        'icon_class' => 'fa fa-twitter',
+    ),
+    'youtube' => array(
+        'label' => esc_html__( 'Youtube', 'oceanwp' ),
+        'icon_class' => 'fa fa-youtube',
+    ),
+    'email' => array(
+        'label' => esc_html__( 'Email', 'oceanwp' ),
+        'icon_class' => 'fa fa-envelope',
+    ),
+    'facebook' => array(
+        'label' => esc_html__( 'Facebook', 'oceanwp' ),
+        'icon_class' => 'fa fa-facebook',
+    ),
+    'googleplus' => array(
+        'label' => esc_html__( 'Google Plus', 'oceanwp' ),
+        'icon_class' => 'fa fa-google-plus',
+    ),
+    'pinterest'  => array(
+        'label' => esc_html__( 'Pinterest', 'oceanwp' ),
+        'icon_class' => 'fa fa-pinterest-p',
+    ),
+    'dribbble' => array(
+        'label' => esc_html__( 'Dribbble', 'oceanwp' ),
+        'icon_class' => 'fa fa-dribbble',
+    ),
+    'vk' => array(
+        'label' => esc_html__( 'VK', 'oceanwp' ),
+        'icon_class' => 'fa fa-vk',
+    ),
+    'tumblr'  => array(
+        'label' => esc_html__( 'Tumblr', 'oceanwp' ),
+        'icon_class' => 'fa fa-tumblr',
+    ),
+    'github'  => array(
+        'label' => esc_html__( 'Github', 'oceanwp' ),
+        'icon_class' => 'fa fa-github-alt',
+    ),
+    'flickr'  => array(
+        'label' => esc_html__( 'Flickr', 'oceanwp' ),
+        'icon_class' => 'fa fa-flickr',
+    ),
+    'skype' => array(
+        'label' => esc_html__( 'Skype', 'oceanwp' ),
+        'icon_class' => 'fa fa-skype',
+    ),
+    'vimeo' => array(
+        'label' => esc_html__( 'Vimeo', 'oceanwp' ),
+        'icon_class' => 'fa fa-vimeo-square',
+    ),
+    'vine' => array(
+        'label' => esc_html__( 'Vine', 'oceanwp' ),
+        'icon_class' => 'fa fa-vine',
+    ),
+    'xing' => array(
+        'label' => esc_html__( 'Xing', 'oceanwp' ),
+        'icon_class' => 'fa fa-xing',
+    ),
+    'yelp' => array(
+        'label' => esc_html__( 'Yelp', 'oceanwp' ),
+        'icon_class' => 'fa fa-yelp',
+    ),
+    'tripadvisor' => array(
+        'label' => esc_html__( 'Tripadvisor', 'oceanwp' ),
+        'icon_class' => 'fa fa-tripadvisor',
+    ),
+    'rss'  => array(
+        'label' => esc_html__( 'RSS', 'oceanwp' ),
+        'icon_class' => 'fa fa-rss',
+    ),
+  );
+}
