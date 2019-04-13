@@ -53,14 +53,24 @@ span.menu-text.hidden { display: none; }
 	background-color: #ffffff;
 	padding: 8px;
 }
-#gform_submit_button_1 {
+
+#gform_submit_button_1,
+#gform_submit_button_5 {
 	border-radius: 3px;
 	line-height: 1;
 	margin: 0;
+	font-size: 16px;
 }
-.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit], .gform_wrapper .gform_page_footer input.button, .gform_wrapper .gform_page_footer input[type=submit] {
-	width: auto !important;
-}
+
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit], .gform_wrapper .gform_page_footer input.button, .gform_wrapper .gform_page_footer input[type=submit] { width: auto !important; }
+
+.gform_wrapper .top_label .gfield_label, .gform_wrapper legend.gfield_label { font-size: 16px; }
+
+.gform_wrapper ul.gfield_checkbox li label, .gform_wrapper ul.gfield_radio li label { font-size: 14px; }
+
+#input_5_2 input { background-color: #FFF; }
+#input_5_3 { background-color: #FFF; }
+ 
 #jot-subscribegroup-button {
 	background-color: #0c4a83;
     font-family: "Noto Sans", Sans-serif;
@@ -97,6 +107,8 @@ span.menu-text.hidden { display: none; }
     background-color: #7ca5bd;
 }
 
+.elementor-button-wrapper { line-height: 1 !important; }
+
 .custom-html-widget h4 {
 	color: #0c4a83;
 	font-family: 'Noto Sans', sans-serif;
@@ -111,9 +123,11 @@ span.menu-text.hidden { display: none; }
 }
 .gform_wrapper h3.gform_title {
 	color: #0c4a83;
+	font-size: 20px;
 }
 .gform_wrapper .gform_footer input[type=submit] { font-family: 'Noto Sans'; }
 
+.elementor-1327 .elementor-element.elementor-element-f86d0af > .elementor-widget-container { line-height: 1; }
 /* Ocean original footer style */
 /* #footer-widgets .footer-box a, #footer-widgets a {
     font-weight: 600;
