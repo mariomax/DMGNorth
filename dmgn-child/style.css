@@ -14,7 +14,6 @@ Version: 1.0
 }
 
 /* IE 11 image overflow fix */
-
 #site-logo #site-logo-inner a img {
   height: 70px;
 }
@@ -180,6 +179,15 @@ span.menu-text.hidden {
   font-size: 16px;
 }
 
+/* Timely Calendar */
+.page-id-155 .content-area {
+  padding-bottom: 4rem;
+}
+
+.ai1ec-title-buttons .ai1ec-btn-group {
+  margin-left: 0;
+}
+
 /* Sidebar */
 .custom-html-widget h4 {
   color: #0c4a83;
@@ -200,16 +208,6 @@ span.menu-text.hidden {
   line-height: 1;
 }
 
-/* Ocean original footer style */
-/* #footer-widgets .footer-box a, #footer-widgets a {
-    font-weight: 600;
-    font-family: 'Noto Sans';
-}
-#footer-widgets .footer-box {
-    display: flex;
-    justify-content: center;
-} */
-
 .footer-copy {
   color: #FFF;
   text-align: center;
@@ -217,11 +215,6 @@ span.menu-text.hidden {
 
 .elementor-157 .elementor-element.elementor-element-0412a44 .elementor-post__read-more a:hover {
   color: #7ca5bd;
-}
-
-/* Events Calendar */
-.ai1ec-title-buttons .ai1ec-btn-group {
-  margin-left: 0;
 }
 
 .register {
@@ -253,7 +246,7 @@ span.menu-text.hidden {
 .seopress-user-consent button {
   border: none;
   border-radius: 3px;
-	color: #FFF;
+  color: #FFF;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
