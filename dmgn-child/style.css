@@ -252,6 +252,12 @@ span.menu-text.hidden {
   text-transform: uppercase;
 }
 
+p.full-article {
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+
 @media (max-width: 959px) {
   .widget-area.sidebar-primary {
     padding: 15px !important;
