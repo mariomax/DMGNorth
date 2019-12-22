@@ -24,53 +24,32 @@ Version: 1.0
 }
 
 /* Header & Navigation */
-#site-header.top-header .oceanwp-mobile-menu-icon {
-  left: 18px;
-}
-
-#site-header.top-header #site-navigation-wrap .dropdown-menu>li>a {
-  font-size: 13px;
-}
-
-#mobile-dropdown ul li a img {
-  height: auto;
-  width: 130px;
-}
-
-.navigation li a img.icon {
-  height: auto;
-  width: 110px;
-  padding-bottom: 2px;
-}
-
-.elementor-nav-menu--main ul li a img.icon {
-  height: 15px;
-  width: 67px;
-  margin-top: 3px;
-}
-
-.elementor-item::after {
-  top: 40px;
-}
-
-.elementor-nav-menu .sub-arrow {
+#main header {
   display: none;
 }
 
-.elementor-nav-menu--dropdown ul li a img.icon {
-  max-width: 25%;
+/* Sticky Navigation */
+#sticky-navigation.elementor-sticky--effects {
+  background-color: #FFF;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
-.effect-one #site-navigation-wrap .dropdown-menu>li>a.menu-link>span:after {
-  bottom: -60%;
+#sticky-main-nav.elementor-sticky--effects {
+  background-color: #FFF;
+  -webkit-transition: all .3s ease;
+  padding: 0;
+  transition: all .3s ease;
+  background-position: 0px 65%;
 }
 
-span.menu-text.hidden {
-  display: none;
+#sticky-main-nav.elementor-sticky--effects .elementor-background-overlay {
+  background-color: rgba(0, 0, 0, 1);
+  opacity: .8;
 }
 
-.page-header-title {
-  font-size: 22px;
+ul#menu-2-1f0d2346 {
+  height: calc(100vh - 36px);
 }
 
 .container.clr.page-header-inner {
@@ -286,6 +265,12 @@ p.full-article {
 }
 
 @media (min-width: 768px) {
+
+  
+  #sticky-main-nav.elementor-sticky--effects #dmg-hero-logo {
+    display: none;
+  }
+
   .page-id-2053 #right-sidebar-inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -317,4 +302,9 @@ p.full-article {
   .page-id-2053 #right-sidebar-inner {
     display: block;
   }
+}
+
+@media (min-width: 1024px) {
+
+
 }
