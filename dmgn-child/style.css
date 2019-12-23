@@ -44,8 +44,8 @@ Version: 1.0
 }
 
 #sticky-main-nav.elementor-sticky--effects .elementor-background-overlay {
-  background-color: rgba(0, 0, 0, 1);
-  opacity: .8;
+  background-color: rgba(0, 0, 0, .9);
+  opacity: .5;
 }
 
 ul#menu-2-1f0d2346 {
@@ -241,7 +241,6 @@ p.full-article {
   padding-bottom: 8px;
 }
 
-
 @media (max-width: 959px) {
   .widget-area.sidebar-primary {
     padding: 15px !important;
@@ -265,8 +264,6 @@ p.full-article {
 }
 
 @media (min-width: 768px) {
-
-  
   #sticky-main-nav.elementor-sticky--effects #dmg-hero-logo {
     display: none;
   }
@@ -299,12 +296,10 @@ p.full-article {
 }
 
 @media (min-width: 960px) {
+  #sticky-main-nav.elementor-sticky--effects .elementor-background-overlay {
+    opacity: .7;
+  }
   .page-id-2053 #right-sidebar-inner {
     display: block;
   }
-}
-
-@media (min-width: 1024px) {
-
-
 }
