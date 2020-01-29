@@ -1,0 +1,267 @@
+/*
+Theme Name: DMG North Child
+Theme URI: https://oceanwp.org/
+Description: OceanWP WordPress theme example child theme. Utilized by dmgn.com
+Author: Nick
+Author URI: https://oceanwp.org/
+Template: oceanwp
+Version: 1.0
+*/
+
+/* Parent stylesheet should be loaded from functions.php not using @import */
+.elementor img {
+  width: 100%;
+}
+
+/* IE 11 image overflow fix */
+#site-logo #site-logo-inner a img {
+  height: 70px;
+}
+
+.oceanwp-text,
+.oceanwp-close-text {
+  font-size: 15px;
+}
+
+/* Header & Navigation */
+#site-header.top-header .oceanwp-mobile-menu-icon {
+  left: 18px;
+}
+
+#site-header.top-header #site-navigation-wrap .dropdown-menu>li>a {
+  font-size: 13px;
+}
+
+#mobile-dropdown ul li a img {
+  height: auto;
+  width: 130px;
+}
+
+.navigation li a img.icon {
+  height: auto;
+  width: 110px;
+  padding-bottom: 2px;
+}
+
+.elementor-nav-menu--main ul li a img.icon {
+  height: 15px;
+  width: 67px;
+  margin-top: 3px;
+}
+
+.elementor-item::after {
+  top: 40px;
+}
+
+.elementor-nav-menu .sub-arrow {
+  display: none;
+}
+
+.elementor-nav-menu--dropdown ul li a img.icon {
+  max-width: 25%;
+}
+
+.effect-one #site-navigation-wrap .dropdown-menu>li>a.menu-link>span:after {
+  bottom: -60%;
+}
+
+span.menu-text.hidden {
+  display: none;
+}
+
+.page-header-title {
+  font-size: 22px;
+}
+
+.container.clr.page-header-inner {
+  text-align: left;
+}
+
+.gallery-caption {
+  background-color: #fff;
+  padding: 8px;
+}
+
+/* Forms */
+#gform_submit_button_1,
+#gform_submit_button_5 {
+  border-radius: 3px;
+  line-height: 1;
+  margin: 0;
+  font-size: 16px;
+}
+
+.gform_wrapper .gform_footer input.button,
+.gform_wrapper .gform_footer input[type=submit],
+.gform_wrapper .gform_page_footer input.button,
+.gform_wrapper .gform_page_footer input[type=submit] {
+  width: auto !important;
+}
+
+.gform_wrapper .top_label .gfield_label,
+.gform_wrapper legend.gfield_label {
+  font-size: 16px;
+}
+
+.gform_wrapper ul.gfield_checkbox li label,
+.gform_wrapper ul.gfield_radio li label {
+  font-size: 14px;
+}
+
+#input_5_2 input {
+  background-color: #FFF;
+}
+
+#input_5_3,
+#input_5_5 {
+  background-color: #FFF;
+}
+
+#jot-subscribegroup-button {
+  background-color: #0c4a83;
+  font-family: 'Noto Sans', Sans-serif;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 3px;
+}
+
+[id^=jot-subscriber-form] input[type="text"] {
+  font-size: 15px;
+  border: 1px solid #818a91;
+  border-radius: 3px;
+}
+
+.elementor-widget-posts .elementor-post__read-more {
+  color: #FF9909;
+}
+
+#jot-confirm-header {
+  font-family: 'Noto Serif', Serif;
+}
+
+.elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated {
+  padding: 0;
+}
+
+#jot-textus-opener {
+  background-color: #0c4a83;
+  font-family: 'Noto Sans', Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+#jot-textus-opener:hover {
+  background-color: #7ca5bd;
+}
+
+.elementor-button-wrapper {
+  line-height: 1 !important;
+}
+
+.gform_wrapper h3.gform_title {
+  color: #0c4a83;
+  font-size: 20px;
+}
+
+.gform_wrapper .gform_footer input[type=submit] {
+  font-family: 'Noto Sans';
+}
+
+#comment-submit {
+  border-radius: 3px;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Timely Calendar */
+.page-id-155 .content-area {
+  padding-bottom: 4rem;
+}
+
+.ai1ec-title-buttons .ai1ec-btn-group {
+  margin-left: 0;
+}
+
+/* Sidebar */
+.custom-html-widget h4 {
+  color: #0c4a83;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.oceanwp-instagram-link {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+}
+
+.oceanwp-instagram-link a {
+  border-bottom: 1px solid #fff !important;
+}
+
+
+.elementor-1327 .elementor-element.elementor-element-f86d0af>.elementor-widget-container {
+  line-height: 1;
+}
+
+
+.elementor-157 .elementor-element.elementor-element-0412a44 .elementor-post__read-more a:hover {
+  color: #7ca5bd;
+}
+
+.register {
+  color: #515151;
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+}
+
+.prereq {
+  color: #ff9900;
+}
+
+.callout {
+  color: #6D6D6D;
+  font-family: 'Noto Serif';
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.callout a:hover {
+  color: #0C4A83;
+  text-decoration: underline;
+}
+
+.callout-intro {
+  margin-bottom: 0;
+}
+
+.seopress-user-consent button {
+  border: none;
+  border-radius: 3px;
+  color: #FFF;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p.full-article {
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+
+@media (max-width: 959px) {
+  .widget-area.sidebar-primary {
+    padding: 15px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  h3.callout {
+    font-size: 18px;
+  }
+}
