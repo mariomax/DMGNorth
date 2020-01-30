@@ -68,7 +68,6 @@ input.submit {
   z-index: 111;
 }
 
-
 #sticky-main-nav span.menu-text.hidden {
   display: none;
 }
@@ -78,8 +77,36 @@ input.submit {
   width: auto;
 }
 
-ul#menu-2-1f0d2346 {
-  height: calc(100vh - 36px);
+#top-nav .elementor-nav-menu--dropdown ul {
+  height: calc(100vh - 70px);
+}
+
+/* Page "IDs" (as CSS class)
+  page-id-245 Home
+  page-id-561 Locations (parent)
+  page-id-3035 Bay Area
+  page-id-3055 Sacramento
+  page-id-3068 Reno
+  page-id-3063 Central Valley
+  page-id-3075 Silicon Valley
+  page-id-3083 Other Locations
+  page-id-138 Products
+  page-id-652 Markets
+*/
+
+/* Sidebar - Location */
+.page-id-3035 #content-wrap,
+.page-id-3055 #content-wrap,
+.page-id-3068 #content-wrap,
+.page-id-3063 #content-wrap,
+.page-id-3075 #content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 .container.clr.page-header-inner {
@@ -118,12 +145,14 @@ ul#menu-2-1f0d2346 {
   font-size: 14px;
 }
 
-#input_5_2 input {
-  background-color: #FFF;
+#gform_5 .gform_heading h3.gform_title {
+  font-size: 22px;
 }
 
 #input_5_3,
-#input_5_5 {
+#input_5_5,
+#input_5_6,
+#input_5_7 {
   background-color: #FFF;
 }
 
@@ -143,10 +172,6 @@ ul#menu-2-1f0d2346 {
 .elementor-widget-posts .elementor-post__read-more {
   color: #FF9909;
 }
-
-/* #jot-confirm-header {
-  font-family: ;
-} */
 
 .elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated {
   padding: 0;
@@ -172,15 +197,6 @@ ul#menu-2-1f0d2346 {
   line-height: 1 !important;
 }
 
-.gform_wrapper h3.gform_title {
-  color: #0c4a83;
-  font-size: 20px;
-}
-
-/* .gform_wrapper .gform_footer input[type=submit] {
-  font-family: ;
-} */
-
 #comment-submit {
   border-radius: 3px;
   font-weight: 700;
@@ -197,18 +213,16 @@ ul#menu-2-1f0d2346 {
 }
 
 /* Sidebar */
-.custom-html-widget h4 {
+
+
+/* .custom-html-widget h4 {
   color: #0F4C81;
 }
 
 a.office-phone {
   font-size: 1.3rem;
   font-weight: 600;
-}
-
-.oceanwp-instagram-link a {
-  border-bottom: 1px solid #fff !important;
-}
+} */
 
 .elementor-1327 .elementor-element.elementor-element-f86d0af>.elementor-widget-container {
   line-height: 1;
@@ -226,6 +240,7 @@ span.elementor-icon-list-text {
 }
 
 /* Products */
+#page-grid .elementor-column-wrap .elementor-widget-wrap,
 #location-product-grid .elementor-column-wrap .elementor-widget-wrap,
 #product-grid .elementor-column-wrap .elementor-widget-wrap {
   display: grid;
@@ -275,7 +290,7 @@ span.elementor-icon-list-text {
 }
 
 /* Markets Portfolio */
-.market-portfolio .elementor-gallery-item {
+/* .market-portfolio .elementor-gallery-item {
   overflow: visible;
 }
 
@@ -291,7 +306,7 @@ span.elementor-icon-list-text {
   width: 100%;
   position: absolute;
   top: 102%;
-}
+} */
 
 .elementor-gallery-item__title.elementor-animated-item--fade-in {
   line-height: 1.1;
@@ -353,46 +368,9 @@ p.full-article {
   padding-bottom: 8px;
 }
 
-@media (max-width: 959px) {
-  .widget-area.sidebar-primary {
-    padding: 15px !important;
-  }
-}
-
-@media (max-width: 767px) {
-  h3.callout {
-    font-size: 18px;
-  }
-
-  .page-id-2053 #content-wrap {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    flex-direction: column-reverse;
-  }
-}
-
 @media (min-width: 768px) {
   #sticky-main-nav li.menu-item-home a {
     padding: 7px 20px;
-  }
-
-  .page-id-2053 #right-sidebar-inner {
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .page-id-2053 #right-sidebar-inner div {
-    -webkit-box-flex: 0;
-    flex: 0 0 50%;
-  }
-
-  .page-id-2053 #right-sidebar-inner .widget_custom_html {
-    position: absolute;
-    top: -999px;
-    left: -999px;
   }
 
   h2.office-title {
@@ -401,8 +379,17 @@ p.full-article {
     left: -999px;
   }
 
+  /* Sidebar - Location */
+  .page-id-3035 #content-wrap,
+  .page-id-3055 #content-wrap,
+  .page-id-3068 #content-wrap,
+  .page-id-3063 #content-wrap,
+  .page-id-3075 #content-wrap {
+    display: block;
+  }
+
   /* Remove Office Intro (w ACF) */
-  .elementor-widget-sidebar .widget_elementor-library {
+  aside#right-sidebar .widget_elementor-library {
     display: none;
   }
 
@@ -424,19 +411,21 @@ p.full-article {
     bottom: -22%;
   }
 
+  #page-grid .elementor-cta:hover .elementor-cta__bg-overlay,
   #product-grid .elementor-cta:hover .elementor-cta__bg-overlay,
   #location-product-grid .elementor-cta:hover .elementor-cta__bg-overlay,
   #portfolio-grid a.elementor-gallery-item:hover .elementor-gallery-item__overlay {
     background-color: rgba(0, 0, 0, .7);
   }
 
-  .market-portfolio .e-gallery-grid:not(.e-gallery--animated) {
+  /* .market-portfolio .e-gallery-grid:not(.e-gallery--animated) {
     -webkit-column-gap: 3rem;
     -moz-column-gap: 3rem;
     column-gap: 3rem;
     row-gap: 5rem;
-  }
+  } */
 
+  #page-grid .elementor-column-wrap .elementor-widget-wrap,
   #location-grid .elementor-column-wrap .elementor-widget-wrap {
     grid-template-columns: repeat(2, 1fr);
     -webkit-column-gap: 2em;
@@ -450,22 +439,17 @@ p.full-article {
   #sticky-main-nav.elementor-sticky--effects .elementor-background-overlay {
     opacity: .7;
   }
-
-  .page-id-2053 #right-sidebar-inner {
-    display: block;
-  }
 }
 
 @media screen and (min-width: 1024px) {
-
   #product-grid .elementor-column-wrap .elementor-widget-wrap,
   #location-grid .elementor-column-wrap .elementor-widget-wrap {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .market-portfolio .elementor-gallery-item__title {
+  /* .market-portfolio .elementor-gallery-item__title {
     bottom: -15%;
-  }
+  } */
 
   #location-grid .elementor-column-wrap .elementor-widget-wrap {
     grid-template-columns: repeat(3, 1fr);
@@ -473,6 +457,12 @@ p.full-article {
 }
 
 @media screen and (min-width: 1200px) {
+  #page-grid .elementor-column-wrap .elementor-widget-wrap {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2em;
+    row-gap: 1em;
+  }
+
   #product-grid .elementor-column-wrap .elementor-widget-wrap {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -482,13 +472,13 @@ p.full-article {
     position: relative;
   }
 
-  .market-portfolio .e-gallery-grid:not(.e-gallery--animated) {
+  /* .market-portfolio .e-gallery-grid:not(.e-gallery--animated) {
     row-gap: 6rem;
   }
 
   .market-portfolio .elementor-gallery-item__title {
     bottom: -13%;
-  }
+  } */
 }
 
 @media screen and (min-width: 1440px) {
