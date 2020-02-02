@@ -62,16 +62,20 @@ input.submit {
 }
 
 /* Sticky Navigation */
-#sticky-main-nav.elementor-sticky--effects {
+#sticky-main-nav-demo.elementor-sticky--effects {
+  background-color: #000;
+  background-image: linear-gradient(315deg, #000 0%, #343434 74%);
   -webkit-transition: all .3s ease;
+  padding: 0 0 1em;
   transition: all .3s ease;
-  z-index: 111;
 }
 
+#sticky-main-nav-demo span.menu-text.hidden,
 #sticky-main-nav span.menu-text.hidden {
   display: none;
 }
 
+#sticky-main-nav-demo span.icon-wrap img,
 #sticky-main-nav span.icon-wrap img {
   height: 3rem;
   width: auto;
@@ -85,10 +89,10 @@ input.submit {
   page-id-245 Home
   page-id-561 Locations (parent)
   page-id-3035 Bay Area
-  page-id-3055 Sacramento
-  page-id-3068 Reno
-  page-id-3063 Central Valley
-  page-id-3075 Silicon Valley
+  page-id-4015 Sacramento
+  page-id-4017 Reno
+  page-id-4019 Central Valley
+  page-id-4021 Silicon Valley
   page-id-3083 Other Locations
   page-id-138 Products
   page-id-652 Markets
@@ -96,16 +100,14 @@ input.submit {
 
 /* Sidebar - Location */
 .page-id-3035 #content-wrap,
-.page-id-3055 #content-wrap,
-.page-id-3068 #content-wrap,
-.page-id-3063 #content-wrap,
-.page-id-3075 #content-wrap {
+.page-id-4015 #content-wrap,
+.page-id-4017 #content-wrap,
+.page-id-4019 #content-wrap,
+.page-id-4021 #content-wrap {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-  -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
 }
 
@@ -116,6 +118,18 @@ input.submit {
 .gallery-caption {
   background-color: #fff;
   padding: 8px;
+}
+
+/* Buttons */
+#office-intro-button .elementor-button-wrapper .elementor-button.elementor-size-sm {
+  display: none;
+}
+
+#office-intro-button .elementor-button-wrapper .elementor-button-link.elementor-button.elementor-size-sm {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 /* Forms */
@@ -213,7 +227,23 @@ input.submit {
 }
 
 /* Sidebar */
+h4.widget-title {
+  font-size: 20px;
+}
 
+ul.contact-info-widget li i,
+ul.contact-info-widget li.text {
+  font-size: 20px;
+}
+
+ul.contact-info-widget li span.oceanwp-contact-text,
+ul.contact-info-widget li span.oceanwp-contact-title {
+  font-size: 16px;
+}
+
+ul.contact-info-widget li span.oceanwp-contact-title {
+  color: #515151;
+}
 
 /* .custom-html-widget h4 {
   color: #0F4C81;
@@ -263,11 +293,9 @@ span.elementor-icon-list-text {
 .market-box .elementor-cta,
 .product-box .elementor-cta {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   overflow: visible;
 }
@@ -381,10 +409,10 @@ p.full-article {
 
   /* Sidebar - Location */
   .page-id-3035 #content-wrap,
-  .page-id-3055 #content-wrap,
-  .page-id-3068 #content-wrap,
-  .page-id-3063 #content-wrap,
-  .page-id-3075 #content-wrap {
+  .page-id-4015 #content-wrap,
+  .page-id-4017 #content-wrap,
+  .page-id-4019 #content-wrap,
+  .page-id-4021 #content-wrap {
     display: block;
   }
 
@@ -442,6 +470,16 @@ p.full-article {
 }
 
 @media screen and (min-width: 1024px) {
+  /* Sidebar */
+  h4.widget-title {
+    font-size: 18px;
+  }
+  
+  ul.contact-info-widget li i,
+  ul.contact-info-widget li.text {
+    font-size: 18px;
+  }
+
   #product-grid .elementor-column-wrap .elementor-widget-wrap,
   #location-grid .elementor-column-wrap .elementor-widget-wrap {
     grid-template-columns: repeat(3, 1fr);
@@ -459,6 +497,8 @@ p.full-article {
 @media screen and (min-width: 1200px) {
   #page-grid .elementor-column-wrap .elementor-widget-wrap {
     grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
     column-gap: 2em;
     row-gap: 1em;
   }
