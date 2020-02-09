@@ -66,23 +66,34 @@ input.submit {
   background-color: #000;
   background-image: linear-gradient(315deg, #000 0%, #343434 74%);
   -webkit-transition: all .3s ease;
-  padding: 0 0 1em;
+  padding: .5em 0;
   transition: all .3s ease;
 }
 
-#sticky-main-nav-demo span.menu-text.hidden,
+#sticky-main-nav-demo nav li {
+  text-shadow: 0 2px #000;
+}
+
+/* #sticky-main-nav-demo span.menu-text.hidden, */
 #sticky-main-nav span.menu-text.hidden {
   display: none;
 }
 
-#sticky-main-nav-demo span.icon-wrap img,
+#sticky-main-nav-demo span.icon-wrap .hidden {
+  display: block;
+}
+
+#sticky-main-nav-demo span.icon-wrap img {
+  display: none;
+}
+
 #sticky-main-nav span.icon-wrap img {
   height: 3rem;
   width: auto;
 }
 
 #top-nav .elementor-nav-menu--dropdown ul {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 40px);
 }
 
 /* Page "IDs" (as CSS class)
@@ -397,8 +408,20 @@ p.full-article {
 }
 
 @media (min-width: 768px) {
+  #sticky-main-nav-demo.elementor-sticky--effects {
+    padding: 0;
+  }
+
   #sticky-main-nav li.menu-item-home a {
     padding: 7px 20px;
+  }
+
+  #sticky-main-nav-demo li.menu-item-home a {
+    padding: 22px 32px;
+  }
+
+  #top-nav .elementor-nav-menu--dropdown ul {
+    height: auto;
   }
 
   h2.office-title {
@@ -470,6 +493,24 @@ p.full-article {
 }
 
 @media screen and (min-width: 1024px) {
+  /* Sticky navigation */
+  #sticky-main-nav-demo span.menu-text.hidden {
+    display: none;
+  }
+
+  #sticky-main-nav-demo span.icon-wrap img {
+    display: block;
+  }
+
+  #sticky-main-nav-demo li.menu-item-home a {
+    padding: 7px 20px;
+  }
+
+  #sticky-main-nav span.icon-wrap img {
+    height: 3rem;
+    width: auto;
+  }
+
   /* Sidebar */
   h4.widget-title {
     font-size: 18px;
