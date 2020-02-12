@@ -6,6 +6,9 @@ RewriteRule .* - [E=noabort:1]
 # END litespeed noabort
 
 # BEGIN WordPress
+# The directives (lines) between `BEGIN WordPress` and `END WordPress` are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
@@ -82,8 +85,20 @@ Header set Last-modified “Mon, 1 Oct 2018 10:10:10 GMT”
 </IfModule>
 
 # Internet Explorer compatibility
-<FilesMatch "\.(htm|html|php)$">
-	<IfModule mod_headers.c>
-		Header set X-UA-Compatible "IE=Edge,chrome=1"
-	</IfModule>
-</FilesMatch>
+<IfModule mod_setenvif.c>
+  <IfModule mod_headers.c>
+    BrowserMatch MSIE ie
+    Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
+  </IfModule>
+</IfModule>
+<IfModule mod_headers.c>
+  Header append Vary User-Agent
+</IfModule>
+
+# Redirects from original North
+Redirect 301 /locations/san-francisco-bay-area https://dmgn.com/locations/bay-area
+Redirect 301 /locations/san-jose https://dmgn.com/locations/silicon-valley
+Redirect 301 /training https://dmgn.com/join-us/training
+Redirect 301 /events https://dmgn.com/join-us/events
+Redirect 301 /careers https://dmgn.com/join-us/careers
+Redirect 301 /dmgn-markets https://dmgn.com/markets
