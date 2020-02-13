@@ -28,7 +28,6 @@ Version: 1.0
   --grid: #7CA5BD;
   --dark: #242424;
   --safe: #FF9900;
-  --btxt: #3D3D3D;
 }
 
 body {
@@ -206,7 +205,8 @@ input.submit {
   padding: 0;
 }
 
-#jot-textus-opener {
+#jot-textus-opener,
+input[type="submit"]#gform_submit_button_1 {
   background-color: var(--safe);
   font-family: proxima-nova, sans-serif;
   font-size: 16px;
@@ -215,10 +215,11 @@ input.submit {
   padding: 14px 20px;
   border: none;
   border-radius: 3px;
-  color: var(--btxt);
+  color: var(--dark);
 }
 
-#jot-textus-opener:hover {
+#jot-textus-opener:hover,
+input[type="submit"]#gform_submit_button_1:hover {
   background-color: var(--blue);
   color: #FFF;
 }
@@ -333,10 +334,10 @@ span.elementor-icon-list-text {
   top: 105%;
 }
 
-.elementor-gallery-item__title.elementor-animated-item--fade-in {
+/* .elementor-gallery-item__title.elementor-animated-item--fade-in {
   line-height: 1.1;
   opacity: 1 !important;
-}
+} */
 
 #location-grid .elementor-column-wrap .elementor-widget-wrap {
   display: grid;
@@ -480,6 +481,10 @@ button#seopress-user-consent-close {
 
   #location-product-grid .elementor-column-wrap .elementor-widget-wrap {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #class-button-box .elementor-button-wrapper a {
+    width: 100%;
   }
 }
 
