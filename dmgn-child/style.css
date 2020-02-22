@@ -147,6 +147,10 @@ input.submit {
   width: max-content;
 }
 
+#class-button-box .elementor-button-wrapper a {
+  width: 100%;
+}
+
 /* Forms */
 #gform_submit_button_1,
 #gform_submit_button_5 {
@@ -207,7 +211,8 @@ input.submit {
 }
 
 #jot-textus-opener,
-input[type="submit"]#gform_submit_button_1 {
+input[type="submit"]#gform_submit_button_1,
+input[type="submit"]#gform_submit_button_5 {
   background-color: var(--safe);
   font-family: proxima-nova, sans-serif;
   font-size: 16px;
@@ -220,7 +225,8 @@ input[type="submit"]#gform_submit_button_1 {
 }
 
 #jot-textus-opener:hover,
-input[type="submit"]#gform_submit_button_1:hover {
+input[type="submit"]#gform_submit_button_1:hover,
+input[type="submit"]#gform_submit_button_5:hover {
   background-color: var(--blue);
   color: #FFF;
 }
@@ -428,6 +434,11 @@ button#seopress-user-consent-close {
     left: -999px;
   }
 
+  #replace .elementor-widget-wrap>.elementor-element.inline-button {
+    display: inline-block;
+    width: 45%;
+  }
+
   /* Sidebar - Location */
   .page-id-3035 #content-wrap,
   .page-id-4015 #content-wrap,
@@ -543,6 +554,10 @@ button#seopress-user-consent-close {
 
   .product-box .elementor-cta .elementor-cta__content {
     position: relative;
+  }
+
+  #replace .elementor-widget-wrap>.elementor-element.inline-button {
+    width: 35%;
   }
 }
 
