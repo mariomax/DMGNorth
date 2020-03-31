@@ -151,6 +151,11 @@ input.submit {
   width: 100%;
 }
 
+#alert a:hover {
+  color: #242424;
+  text-decoration: underline;
+}
+
 /* Forms */
 #gform_submit_button_1,
 #gform_submit_button_5 {
