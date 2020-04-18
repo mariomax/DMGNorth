@@ -194,6 +194,10 @@ input.submit {
   background-color: #FFF;
 }
 
+.gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+  margin-top: 0 !important;
+}
+
 #jot-subscribegroup-button {
   background-color: var(--blue);
   font-size: 15px;
