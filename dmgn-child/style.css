@@ -198,6 +198,18 @@ input.submit {
   margin-top: 0 !important;
 }
 
+#survey-form .elementor-widget-container h5 {
+  font-size: 20px;
+}
+
+#survey-form #field_17_7 {
+  border-bottom: none;
+}
+
+#survey-form #gfield_description_17_7 {
+  font-size: 1em;
+}
+
 #jot-subscribegroup-button {
   background-color: var(--blue);
   font-size: 15px;
