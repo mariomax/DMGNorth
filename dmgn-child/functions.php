@@ -47,6 +47,15 @@ function wpcrux_head_meta() {
 } 
 add_action( 'wp_head', 'wpcrux_head_meta' );
 
+/*
+ * Function to link to Adobe Fonts Typekit
+ */
+add_action( 'wp_head', function() {
+	?>
+	<link rel="stylesheet" href="https://use.typekit.net/xvz4fdo.css">
+	<?php
+} );
+
 
 /**
  * Order the Social Icons in the Header Nav area
@@ -140,7 +149,7 @@ function change_social_options_order(){
 }
 
 /*
- * Function for post duplication. Dups appear as drafts. User is redirected to the edit screen
+ * Function for post duplication. Dupelicates appear as drafts. User is redirected to the edit screen.
  */
 function rd_duplicate_post_as_draft(){
     global $wpdb;
