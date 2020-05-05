@@ -149,7 +149,7 @@ function change_social_options_order(){
 }
 
 /*
- * Function for post duplication. Dupelicates appear as drafts. User is redirected to the edit screen.
+ * Function for post duplication. Duplicates appear as drafts. User is redirected to the edit screen.
  */
 function rd_duplicate_post_as_draft(){
     global $wpdb;
