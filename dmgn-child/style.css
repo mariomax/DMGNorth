@@ -188,7 +188,8 @@ input.submit {
 }
 
 #gform_25 .gform_footer input[type=submit],
-#gform_26 .gform_footer input[type=submit] {
+#gform_26 .gform_footer input[type=submit],
+#health-form .gform_footer input[type=submit] {
   background-color: #FF9900;
   border-radius: 3px;
   color: #242424;
@@ -519,6 +520,11 @@ button#seopress-user-consent-close {
     column-gap: 2em;
     row-gap: 1em;
   }
+
+  .gform_confirmation_message img {
+    max-width: 50% !important;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 960px) {
@@ -591,6 +597,10 @@ button#seopress-user-consent-close {
 
   #replace .elementor-widget-wrap>.elementor-element.inline-button {
     width: 35%;
+  }
+
+  .gform_confirmation_message img {
+    max-width: 33% !important;
   }
 }
 
