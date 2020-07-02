@@ -322,11 +322,85 @@ class GW_Rename_Uploaded_Files {
 
 # Configuration
 
-new GW_Rename_Uploaded_Files( array(
+new GW_Rename_Uploaded_Files( 
+	array(
 	'form_id' => 36,
-	'field_id' => 4,
-	'template' => '{Name (First):6.3}-{Name (Last):6.6}-{filename}' // most merge tags are supported, original file extension is preserved
-) );
+	'field_id' => 8,
+	'template' => '{Single Line Text:1}-{Name (First):4.3}-{Name (Last):4.6}-{filename}'
+	)
+ );
+
+new GW_Rename_Uploaded_Files( 
+	array(
+	'form_id' => 36,
+	'field_id' => 10,
+	'template' => '{Single Line Text:1}-{Name (First):4.3}-{Name (Last):4.6}-{filename}'
+	)
+);
+
+new GW_Rename_Uploaded_Files( 
+	array (
+	'form_id' => 36,
+	'field_id' => 12,
+	'template' => '{Single Line Text:1}-{Name (First):4.3}-{Name (Last):4.6}-{filename}'
+	)
+);
+
+new GW_Rename_Uploaded_Files(
+	array (
+	'form_id' => 36,
+	'field_id' => 14,
+	'template' => '{Single Line Text:1}-{Name (First):4.3}-{Name (Last):4.6}-{filename}'
+	)
+);
+
+new GW_Rename_Uploaded_Files(
+	array (
+	'form_id' => 36,
+	'field_id' => 16,
+	'template' => '{Single Line Text:1}-{Name (First):4.3}-{Name (Last):4.6}-{filename}'
+	)
+);
+
+new GW_Rename_Uploaded_Files( 
+	array(
+	'form_id' => 37,
+	'field_id' => 8,
+	'template' => '{Single Line Text:1}-{Name (First):4.3}-{Name (Last):4.6}-{filename}'
+	)
+ );
+
+new GW_Rename_Uploaded_Files( 
+	array(
+	'form_id' => 37,
+	'field_id' => 10,
+	'template' => '{Single Line Text:1}-{Name (First):4.3}-{Name (Last):4.6}-{filename}'
+	)
+);
+
+new GW_Rename_Uploaded_Files( 
+	array (
+	'form_id' => 37,
+	'field_id' => 12,
+	'template' => '{Single Line Text:1}-{Name (First):4.3}-{Name (Last):4.6}-{filename}'
+	)
+);
+
+new GW_Rename_Uploaded_Files(
+	array (
+	'form_id' => 37,
+	'field_id' => 14,
+	'template' => '{Single Line Text:1}-{Name (First):4.3}-{Name (Last):4.6}-{filename}'
+	)
+);
+
+new GW_Rename_Uploaded_Files(
+	array (
+	'form_id' => 37,
+	'field_id' => 16,
+	'template' => '{Single Line Text:1}-{Name (First):4.3}-{Name (Last):4.6}-{filename}'
+	)
+);
 
 /**
  * Order the Social Icons in the Header Nav area
