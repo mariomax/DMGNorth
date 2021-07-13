@@ -157,6 +157,10 @@ input.submit {
 }
 
 /* Forms */
+.elementor-widget-container .gform_body ul {
+  list-style-type: none;
+}
+
 #gform_submit_button_1,
 #gform_submit_button_5 {
   border-radius: 3px;
@@ -170,6 +174,7 @@ input.submit {
 .gform_wrapper .gform_footer input[type=submit],
 .gform_wrapper .gform_page_footer input.button,
 .gform_wrapper .gform_page_footer input[type=submit] {
+  padding: 14px 12px;
   width: auto !important;
 }
 
@@ -209,6 +214,15 @@ input.submit {
 
 .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
   margin-top: 0 !important;
+}
+
+#survey-form input[type=text] {
+  border: 1px solid var(--gray);
+}
+
+#survey-form input[type=submit] {
+  padding: 10px 15px;
+  border-radius: 3px;
 }
 
 #survey-form .elementor-widget-container h5 {
@@ -298,6 +312,11 @@ span#ui-id-1.ui-dialog-title,
   margin-left: 0;
 }
 
+.ai1ec-single-event .ai1ec-event-details .ai1ec-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* Sidebar */
 h4.widget-title {
   font-size: 20px;
@@ -319,6 +338,12 @@ ul.contact-info-widget li span.oceanwp-contact-title {
 
 .elementor-1327 .elementor-element.elementor-element-f86d0af>.elementor-widget-container {
   line-height: 1;
+}
+
+/* GDPR */
+.seopress-user-consent {
+  -webkit-transform: translate(-50%, 0%) !important;
+  transform: translate(-50%, 0%) !important;
 }
 
 /* Footer */
@@ -487,6 +512,11 @@ button#seopress-user-consent-close {
     display: none;
   }
 
+  aside#right-sidebar #elementor-library-7 {
+    display: block;
+    max-width: 300px;
+  }
+
   #location-product-grid .elementor-column-wrap .elementor-widget-wrap,
   #media-grid .elementor-column-wrap .elementor-widget-wrap {
     grid-template-columns: repeat(3, 1fr);
@@ -543,6 +573,7 @@ button#seopress-user-consent-close {
 }
 
 @media screen and (min-width: 1024px) {
+
   /* Sticky navigation */
   #sticky-nav-section.elementor-sticky--effects {
     padding: 0;
@@ -569,7 +600,7 @@ button#seopress-user-consent-close {
   h4.widget-title {
     font-size: 18px;
   }
-  
+
   ul.contact-info-widget li i,
   ul.contact-info-widget li.text {
     font-size: 18px;
